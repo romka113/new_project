@@ -16,41 +16,92 @@ body {
   position: relative;
 }
 button {
-  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
   width: 10rem;
   background-color: aqua;
   padding: 20px;
+  position: absolute;
+  top: 30vh;
+  font-size: 2em;
+  font-weight: bold;
 }
 select {
-  height: 5vh;
-  min-width: 10vw;
-  font-size: 4rem;
+  height: 10%;
+  width: 10rem;
+  font-size: 2em;
+  position: absolute;
+  top: 20vh;
+  font-weight: bold;
   option {
-    font-size: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
   }
 }
 h1 {
   position: absolute;
   top: 8vh;
-  font-size: 8rem;
+  font-size: max(8vw, 20px);
   background: linear-gradient(to right, aqua, yellow);
 }
 h2 {
-  height: 5vh;
-  min-width: 10vw;
+  height: max(10%, 30px);
+  width: 10rem;
   background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  font-size: 2em;
+  position: absolute;
+  top: 40vh;
 }
 div {
-  min-height: 400px;
-  min-width: 500px;
-  background-color: aliceblue;
+  height: max(30%, 16rem);
+  width: 50vw;
   position: absolute;
-  bottom: 15vh;
+  bottom: 10vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 200px 200px;
+}
+@media screen and (min-width: 600px) {
+  button {
+    height: 10%;
+    width: 10rem;
+    position: static;
+    font-size: 2em;
+  }
+  select {
+    height: 10%;
+    width: 10rem;
+    font-size: 2em;
+    position: static;
+
+    option {
+      font-size: 2rem;
+    }
+  }
+  h1 {
+    top: 8vh;
+    font-size: max(8vw, 30px);
+  }
+  h2 {
+    height: max(10%, 30px);
+    width: 10rem;
+    font-size: 2em;
+    position: static;
+  }
+  div {
+    height: 16rem;
+    width: 50vw;
+    position: absolute;
+    bottom: 10vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px 200px;
+  }
 }
