@@ -25,34 +25,34 @@ button {
 }
 
 select {
-  height: 5rem;
-  width: 7vw;
-  font-size: 45px;
+  height: 5vh;
+  min-width: 10vw;
+  font-size: 4rem;
 }
 select option {
-  font-size: 45px;
+  font-size: 4rem;
 }
 
 h1 {
   position: absolute;
-  top: 10vh;
+  top: 8vh;
   font-size: 8rem;
   background: linear-gradient(to right, aqua, yellow);
 }
 
 h2 {
-  height: 5rem;
-  width: 10rem;
+  height: 5vh;
+  min-width: 10vw;
   background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 45px;
+  font-size: 4rem;
 }
 
 div {
-  height: 20vh;
-  width: 20vw;
+  min-height: 400px;
+  min-width: 500px;
   background-color: aliceblue;
   position: absolute;
   bottom: 15vh;
